@@ -1,0 +1,176 @@
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+body {
+    color: #526066;
+}
+
+h2, h3 {
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+.is-center {
+  text-align: center;
+}
+
+.is-left {
+  text-align: left;
+}
+.is-justify {
+  text-align: justify;
+}
+.is-right {
+  text-align: right;
+}
+
+/*
+ * -- Layout Styles --
+ */
+
+.box {
+    padding: 0.5em 2em;
+}
+
+/*
+ * -- MENU STYLES --
+ * Make the menu have a very faint box-shadow.
+ */
+ .navbar {
+  margin-bottom: 0px;
+ }
+.pure-menu {
+    box-shadow: 0 1px 5px rgba(0,0,0, 0.30);
+}
+
+.pure-menu-horizontal {
+    white-space: normal;
+}
+
+.pure-menu-link {    
+    padding: 1.35em;
+}
+
+.show-on-down-screen {
+  display: none !important;
+}
+
+.sidebar {
+  background-color: #000;
+  text-align: center;
+}
+
+.sidebar ul li.pure-menu-item {
+  width: 100%;
+}
+
+.thumb a{
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.thumb a:hover {
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+  .content {
+    max-width: 980px;
+    margin: 0 auto;
+ }
+
+.text-head {
+    color: black;
+    font-weight: 500;
+}
+
+.footer {
+    background: #111;
+    color: #888;
+    padding: 0.6em 2em;
+}
+
+.footer-mark {
+    background: #000;
+    color: #888;
+    text-align: right;
+    height: 3.375em;
+    padding: 1.5rem;
+}
+.footer a {
+  color: #ddd;
+}
+
+span.mark {
+    float: left;
+    font-size: 0.9em;    
+    background-color: #000;
+}
+
+div.socials {
+  float: right; 
+  margin-right: 1.5em; 
+}
+
+
+
+/*
+ * -- TABLET MEDIA QUERIES --
+ * On tablets, we want to slightly adjust the size of the banner
+ * text and add some vertical space between the various pricing tables
+ */
+@media(max-width: 767px) {
+
+    .show-on-down-screen {
+      display: inline !important;
+    }
+
+    .hide-on-down-screen {
+      display: none !important;
+    }
+
+}
+
+/*
+ * -- PHONE MEDIA QUERIES --
+ * On phones, we want to reduce the height and font-size of the banner further
+ */
+@media (max-width: 480px) {
+  span.mark {
+    text-align: center;
+    font-size: 0.9em;
+    margin: 1em 0.9em;
+  }
+
+  div.socials {
+    text-align: center;
+    margin: 0;    
+    float: none;
+  }
+}
+@media (max-width: 320px) {
+  .footer-mark {  
+    height: 6.75em;
+  }
+
+  span.mark {
+    text-align: center;
+    font-size: 0.9em;
+    margin: 1em 0.9em;
+  }
+
+  div.socials {
+    text-align: center;
+    margin: 0;    
+    float: none;
+  }
+}

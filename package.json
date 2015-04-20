@@ -1,0 +1,11 @@
+{
+  "name": "aesiaweb",
+  "version": "0.0.1",
+  "description": "Website de AESIA FMOcc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webslinder/AesiaWeb.git"
+  },
+  "author": "Webslinder <webslinder@webslinder.com> (http://webslinder.com/)",
+  "license": ""
+}
