@@ -3,7 +3,21 @@ html, body {
   height: 100%;
   width: 100%;
 }
-
+.wrapper {
+  height: 100%
+}
+.is-center {
+text-align: center;
+}
+.is-left {
+text-align: left;
+}
+.is-justify {
+text-align: justify;
+}
+.is-right {
+text-align: right;
+}
 
 .pad-section {
   padding: 50px 0;
@@ -76,6 +90,137 @@ html, body {
   height: 500px;
 }
 
+.show-on-down-screen {
+display: none !important;
+}
+.sidebar {
+background-color: #000;
+text-align: center;
+}
+.sidebar ul li.pure-menu-item {
+width: 100%;
+}
+.thumb {
+height: 20rem;
+}
+.thumb a{
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;
+}
+.thumb a:hover {
+-webkit-transform: rotate(-3deg);
+-moz-transform: rotate(-3deg);
+-ms-transform: rotate(-3deg);
+transform: rotate(-3deg);
+}
+
 footer {
   padding: 20px 0;
+}
+.footer {
+background: #111;
+color: #888;
+padding: 0.6em 2em;
+}
+.footer-mark {
+background: #000;
+color: #888;
+height: 4.5em;
+padding: 2rem;
+}
+.mark, mark {
+padding: 0 !important;
+background-color: transparent !important;
+}
+.socials a {
+color: #fff;
+padding: 0.5rem;
+}
+.socials #fb:hover {
+color: #3b5998;
+}
+.socials #tw:hover {
+color: #00aced;
+}
+.socials #yt:hover {
+color: #bb0000;
+}
+.navbar .navbar-right > li > a:hover {
+color: black;
+border-bottom: 3px solid;
+border-color: rgb(0, 0, 0);
+padding-bottom: 19px;
+background-color: rgba(0,0,6,0.1);
+}
+.navbar-right {
+margin-right: 0px !important;
+}
+.navbar, .navbar-nav {
+min-height: 60px;
+}
+.navbar .navbar-nav > li > a {
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.navbar-brand img {
+}
+.navbar-toggle {
+margin-top: 1.3rem
+}
+.navbar-header > a.navbar-brand {
+margin: 1rem;
+width: 148px;
+height: 42px;
+background-image: url("../imgs/logo.png");
+background-repeat: no-repeat;
+background-position: center;
+}
+.navbar-header > a.navbar-brand:hover {
+background-image: url("../imgs/logoBW.png");
+background-repeat: no-repeat;
+background-position: center;
+}
+/*
+* -- TABLET MEDIA QUERIES --
+* On tablets, we want to slightly adjust the size of the banner
+* text and add some vertical space between the various pricing tables
+*/
+@media(max-width: 767px) {
+.navbar .navbar-nav > li > a:hover {
+background-color: rgba(255,255,255,0.1);
+}
+.show-on-down-screen {
+display: inline !important;
+}
+.hide-on-down-screen {
+display: none !important;
+}
+}
+/*
+* -- PHONE MEDIA QUERIES --
+* On phones, we want to reduce the height and font-size of the banner further
+*/
+@media (max-width: 480px) {
+.mark {
+text-align: center;
+font-size: 0.9em;
+margin-top: -0.5em;
+}
+/*div.socials {
+text-align: center;
+margin: 0;
+float: none;
+}*/
+}
+@media (max-width: 320px) {
+/*.footer-mark {
+height: 6.75em;
+}*/
+/*div.socials {
+text-align: center;
+margin: 0;
+float: none;
+}*/
 }

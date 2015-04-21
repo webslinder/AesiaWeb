@@ -1,17 +1,17 @@
 {
-  "name": "aesiaweb",
-  "version": "0.0.1",
-  "description": "Website de AESIA FMOcc",
-  "dependencies": {    
-    "jquery": "~2.1.1",
-    "jquery-ui": "1.11.3",
-    "bootstrap": "latest",
-    "simple-sidebar": "latest",
-    "blueimp-gallery": "latest",
-    "bootstrap-material-design": "latest",
-    "ionicons": "latest",
-    "animate.css": "3.2.5"
-  },
-  "author": "Webslinder <webslinder@webslinder.com> (http://webslinder.com/)",
-  "license": ""
+"name": "aesiaweb",
+"version": "0.0.1",
+"description": "Website de AESIA FMOcc",
+"dependencies": {
+"jquery": "~2.1.1",
+"jquery-ui": "1.11.3",
+"bootstrap": "latest",
+"simple-sidebar": "latest",
+"blueimp-gallery": "latest",
+"bootstrap-material-design": "latest",
+"ionicons": "latest",
+"animate.css": "3.2.5"
+},
+"author": "Webslinder <webslinder@webslinder.com> (http://webslinder.com/)",
+"license": ""
 }

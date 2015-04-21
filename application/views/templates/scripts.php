@@ -1,4 +1,5 @@
-<script src="<?= base_url()?>public/lib/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+<script src="<?= base_url()?>public/lib/jquery/dist/jquery.min.js"></script>
 <script src="<?= base_url()?>public/lib/jquery-ui/jquery-ui.min.js"></script>
 <script src="<?= base_url()?>public/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="<?= base_url()?>public/lib/simple-sidebar/dist/jquery.simplesidebar.min.js"></script>
