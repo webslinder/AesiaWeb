@@ -14,51 +14,59 @@ jQuery(document).ready(function() {
     }
   });
 
-  // Provide your access token
-L.mapbox.accessToken = 'pk.eyJ1IjoiYWdvZGluZXoiLCJhIjoiUy1oX2lnWSJ9.hENhR46xWhRyMH4DXipdBg';
-// Create a map in the div #map
-L.mapbox.map('map', 'agodinez.lk8i9341');
+  //Mapa
+  L.mapbox.accessToken = 'pk.eyJ1IjoiYWdvZGluZXoiLCJhIjoiUy1oX2lnWSJ9.hENhR46xWhRyMH4DXipdBg';
+  var map = L.mapbox.map('map', 'agodinez.m07oo184')
+    .setView([13.97, -89.574], 17);
 
-  /* mapa
-var map = L.map('map').setView([13.970956, -89.574815], 17);
+    map.featureLayer.on('click', function(e) {
+        map.panTo(e.layer.getLatLng());
+    });
 
-// add an OpenStreetMap tile layer
-L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { //'http://{s}.tiles.mapbox.com/v3/MapID/{z}/{x}/{y}.png'
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
+  // L.marker is a low-level marker constructor in Leaflet.
+  L.marker([13.97, -89.574], {
+    icon: L.mapbox.marker.icon({
+      'marker-size': 'large',
+      'marker-symbol': 'circle',
+      'marker-color': '#f86767'
+    })
+  })
+  .bindPopup('<p><strong>UES FMOcc</strong><br />Edificio de usos multiples, 3ra Planta.</p>')
+  .addTo(map);
 
-// add a marker in the given location, attach some popup content to it and open the popup
-L.marker([13.970956, -89.574815]).addTo(map)
-    .bindPopup('3ra planta del Edificio de Usos Multiples, UES FMOcc')
-    .openPopup();*/
+  map.scrollWheelZoom.disable();
+  if (map.tap) {
+    map.tap.disable()
+  };
+
+  
+
 
 
   //animaciones
-
   $('#head1').addClass('animated fadeInDownBig');
   $('#subhead').addClass('animated fadeInUp');
   $('#vi').addClass('animated slideInup');
   $('#mi').addClass('animated flipInUp');
-
   $("#about").click(function() {
     $('#des').addClass('animated flip');
   });
-
   //Navegacion
-  
-    
-  
+
+
+
   $('a[href*=#]').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-      && location.hostname == this.hostname) {
-        var $target = $(this.hash);
-          $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-          if ($target.length) {
-            var targetOffset = $target.offset().top;
-              $('html,body').animate({scrollTop: targetOffset}, 1000);
-              return false;
-          }
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body').animate({
+          scrollTop: targetOffset
+        }, 1000);
+        return false;
+      }
     }
   });
-  
+
 });
