@@ -3,7 +3,8 @@
 		<div class="row">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-12">
+					<div class="col-lg-12 is-center">
+					<h1 class="text-head">Galería de Imágenes</h1>
 					</div>
 					<div id="blueimp-gallery" class="blueimp-gallery">
 						<div class="slides"></div>
@@ -15,54 +16,54 @@
 					<ol class="indicator"></ol>
 				</div>
 				<div id="links">
-					<div class="col-lg-3 col-md-3 col-xs-4 thumb">
+					<div class="col-lg-3 col-md-3 col-xs-6 thumb">
 						<a class="thumbnail" href="<?= base_url()?>public/imgs/thumbs/1.jpg">
 							<img class="img-responsive" src="<?= base_url()?>public/imgs/thumbs/1.jpg" alt="">
 						</a>
 					</div>
-					<div class="col-lg-3 col-md-3 col-xs-4 thumb">
+					<div class="col-lg-3 col-md-3 col-xs-6 thumb">
 						<a class="thumbnail" href="<?= base_url()?>public/imgs/thumbs/2.jpg">
 							<img class="img-responsive" src="<?= base_url()?>public/imgs/thumbs/2.jpg" alt="">
 						</a>
 					</div>
-					<div class="col-lg-3 col-md-3 col-xs-4 thumb">
+					<div class="col-lg-3 col-md-3 col-xs-6 thumb">
 						<a class="thumbnail" href="<?= base_url()?>public/imgs/thumbs/3.jpg">
 							<img class="img-responsive" src="<?= base_url()?>public/imgs/thumbs/3.jpg" alt="">
 						</a>
 					</div>
-					<div class="col-lg-3 col-md-3 col-xs-4 thumb">
+					<div class="col-lg-3 col-md-3 col-xs-6 thumb">
 						<a class="thumbnail" href="<?= base_url()?>public/imgs/thumbs/4.jpg">
 							<img class="img-responsive" src="<?= base_url()?>public/imgs/thumbs/4.jpg" alt="">
 						</a>
 					</div>
 					
-					<div class="col-lg-3 col-md-3 col-xs-4 thumb">
+					<div class="col-lg-3 col-md-3 col-xs-6 thumb">
 						<a class="thumbnail" href="<?= base_url()?>public/imgs/thumbs/1.jpg">
 							<img class="img-responsive" src="<?= base_url()?>public/imgs/thumbs/1.jpg" alt="">
 						</a>
 					</div>
-					<div class="col-lg-3 col-md-3 col-xs-4 thumb">
+					<div class="col-lg-3 col-md-3 col-xs-6 thumb">
 						<a class="thumbnail" href="<?= base_url()?>public/imgs/thumbs/2.jpg">
 							<img class="img-responsive" src="<?= base_url()?>public/imgs/thumbs/2.jpg" alt="">
 						</a>
 					</div>
-					<div class="col-lg-3 col-md-3 col-xs-4 thumb">
+					<div class="col-lg-3 col-md-3 col-xs-6 thumb">
 						<a class="thumbnail" href="<?= base_url()?>public/imgs/thumbs/3.jpg">
 							<img class="img-responsive" src="<?= base_url()?>public/imgs/thumbs/3.jpg" alt="">
 						</a>
 					</div>
-					<div class="col-lg-3 col-md-3 col-xs-4 thumb">
+					<div class="col-lg-3 col-md-3 col-xs-6 thumb">
 						<a class="thumbnail" href="<?= base_url()?>public/imgs/thumbs/4.jpg">
 							<img class="img-responsive" src="<?= base_url()?>public/imgs/thumbs/4.jpg" alt="">
 						</a>
 					</div>
 					
-					<div class="col-lg-3 col-md-3 col-xs-4 thumb">
+					<div class="col-lg-3 col-md-3 col-xs-6 thumb">
 						<a class="thumbnail" href="<?= base_url()?>public/imgs/thumbs/1.jpg">
 							<img class="img-responsive" src="<?= base_url()?>public/imgs/thumbs/1.jpg" alt="">
 						</a>
 					</div>
-					<div class="col-lg-3 col-md-3 col-xs-4 thumb">
+					<div class="col-lg-3 col-md-3 col-xs-6 thumb">
 						<a class="thumbnail" href="<?= base_url()?>public/imgs/thumbs/2.jpg">
 							<img class="img-responsive" src="<?= base_url()?>public/imgs/thumbs/2.jpg" alt="">
 						</a>

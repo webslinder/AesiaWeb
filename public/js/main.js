@@ -14,37 +14,24 @@ jQuery(document).ready(function() {
     }
   });
 
-  var latlng = new google.maps.LatLng(-89.533333, 13.983333);
+  // Provide your access token
+L.mapbox.accessToken = 'pk.eyJ1IjoiYWdvZGluZXoiLCJhIjoiUy1oX2lnWSJ9.hENhR46xWhRyMH4DXipdBg';
+// Create a map in the div #map
+L.mapbox.map('map', 'agodinez.lk8i9341');
 
+  /* mapa
+var map = L.map('map').setView([13.970956, -89.574815], 17);
 
-  var options = {
-    zoom: 15,
-    center: latlng,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    navigationControl: true,
-    mapTypeControl: false,
-    scrollwheel: false,
-    disableDoubleClickZoom: true
-  };
+// add an OpenStreetMap tile layer
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { //'http://{s}.tiles.mapbox.com/v3/MapID/{z}/{x}/{y}.png'
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
 
+// add a marker in the given location, attach some popup content to it and open the popup
+L.marker([13.970956, -89.574815]).addTo(map)
+    .bindPopup('3ra planta del Edificio de Usos Multiples, UES FMOcc')
+    .openPopup();*/
 
-  var map = new google.maps.Map(document.getElementById('google_map'), options);
-
-
-  var marker1 = new google.maps.Marker({
-    position: latlng,
-    map: map
-  });
-
-
-  google.maps.event.addListener(marker1, 'click', function() {
-    infowindow.open(map, marker1);
-  });
-
-
-  var infowindow = new google.maps.InfoWindow({
-    content: '<div class="info"><strong>Ues-occ</strong><br><br>Edificio de usosmultiples<br>3er nivel</div>'
-  });
 
   //animaciones
 
@@ -56,4 +43,22 @@ jQuery(document).ready(function() {
   $("#about").click(function() {
     $('#des').addClass('animated flip');
   });
+
+  //Navegacion
+  
+    
+  
+  $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+      && location.hostname == this.hostname) {
+        var $target = $(this.hash);
+          $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+          if ($target.length) {
+            var targetOffset = $target.offset().top;
+              $('html,body').animate({scrollTop: targetOffset}, 1000);
+              return false;
+          }
+    }
+  });
+  
 });

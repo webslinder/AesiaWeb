@@ -5,7 +5,7 @@
 				<h3>Contactanos</h3>
 				<h4>Universidad de El Salvador Faculta Multidiciplinaria de Occidente</h4>
 				<br>
-				<a data-toggle="modal" href="#message" class="btn btn-primary">Escribenos</a>
+				<div type="button" data-toggle="modal" href="#message" class="btn btn-primary">Escribenos</div>
 			</div>
 			
 			<div class="modal" id="message">
@@ -13,21 +13,33 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-							<h4 class="modal-title">Escribenos</h4>
+							<legend class="is-center">Escribenos</legend>
 						</div>
 						<div class="modal-body">
-							<form>
-								<input class="form-control floating-label" placeholder="Email" type="email">
-								<br>
-								<br>
-								<input class="form-control floating-label" placeholder="Asunto" type="text">
-								<br>
-								<br>
-								<textarea class="form-control floating-label" placeholder="Mensaje..."></textarea>
+							<form class="form-horizontal">
+								<fieldset>
+									<div class="form-group">
+										<label for="iEmail" class="col-lg-2 control-label">Email:</label>
+										<div class="col-lg-10">
+											<input id="iEmail" class="form-control floating-label" placeholder="example@correo.com" type="email">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="iAsunto" class="col-lg-2 control-label">Asunto:</label>
+										<div class="col-lg-10">
+											<input id="iAsunto" class="form-control floating-label" placeholder="Hola" type="text">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="iMensaje" class="col-sm-2 control-label">Mensaje:</label>
+										<div class="col-lg-10">
+											<textarea id="iMensaje" class="form-control floating-label" rows="3" placeholder="Hola AESIA! :)"></textarea>
+										</div>
+									</div>
+								</fieldset>
 							</form>
 						</div>
-						<div class="modal-footer">
-							<a href="#" data-dismiss="modal" class="btn">Salir</a>
+						<div class="modal-footer is-center">
 							<a href="#" class="btn btn-primary">Enviar Mensaje</a>
 						</div>
 					</div>

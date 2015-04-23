@@ -8,3 +8,4 @@
 <script src="<?=base_url()?>public/lib/bootstrap-material-design/dist/js/material.min.js"></script>
 <script src="<?= base_url()?>public/js/main.js"></script>
 <script src="<?= base_url()?>public/js/gallery.js"></script>
+<script src="<?= base_url()?>public/js/mapbox.js"></script>
