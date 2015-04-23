@@ -6,8 +6,8 @@
 					<div class="panel-heading">
 						<h2 class="panel-title">Vision</h2>
 					</div>
-					<div class="panel-body lead" id="vi">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet.
+					<div class="panel-body lead is-justify" id="vi">
+						Ser una asociación reconocida a nivel nacional por fomentar el desarrollo de profesionales íntegros, creativos y con conciencia social dentro de la Universidad de El Salvador, contribuyendo al desarrollo y bienestar en la sociedad salvadoreña.
 					</div>
 				</div>
 			</div>
@@ -16,8 +16,8 @@
 					<div class="panel-heading">
 						<h2 class="panel-title">Mision</h2>
 					</div>
-					<div class="panel-body lead" id="mi">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet.
+					<div class="panel-body lead is-justify" id="mi">
+						Somos una asociación estudiantil que promueve el desarrollo integral de los estudiantes de ingeniería y arquitectura de la UES FMOcc, fortaleciendo la relación profesional competente con la concienciasocial creando agentes de cambio comprometidos con el desarrollo del país.
 					</div>
 				</div>
 			</div>

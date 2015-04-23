@@ -26,6 +26,9 @@ text-align: right;
   width: 100%;
 }
 
+.panel-title {
+  font-size: 2.5rem;
+}
 .text-vcenter {
   display: table-cell;
   text-align: center;
@@ -131,11 +134,11 @@ padding: 0.6em 2em;
 .footer-mark {
 background: #000;
 color: #888;
-height: 6em;
+height: 8em;
 padding: 2rem;
 }
 .mark, mark {
-padding: 0 !important;
+padding: 0.15em !important;
 background-color: transparent !important;
 }
 .socials a {
@@ -148,8 +151,14 @@ color: #3b5998;
 .socials #tw:hover {
 color: #00aced;
 }
-.socials #yt:hover {
+.socials #yt:hover, .mark .ion-heart:hover {
 color: #bb0000;
+}
+.mark #ws {
+text-decoration: none
+}
+.mark #ws:hover {
+color: #00aced;
 }
 .navbar .navbar-right > li > a:hover {
 color: black;
@@ -214,7 +223,7 @@ display: none !important;
 .mark {
 text-align: center;
 font-size: 0.9em;
-margin-top: -0.5em;
+margin-top: -0.2em;
 }
 #proyectos h4, #about h2, #information h2 {
   font-size: 1.4em;

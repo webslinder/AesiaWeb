@@ -18,6 +18,5 @@
 <link rel="stylesheet" href="<?= base_url()?>public/lib/animate.css/animate.css">
 <link rel="stylesheet" href="<?= base_url()?>public/lib/blueimp-gallery/css/blueimp-gallery.min.css">
 <link rel="stylesheet" href="<?= base_url()?>public/css/mapbox.css">
-<link rel="stylesheet" href="<?= base_url()?>public/css/leaflet.css">
 <link rel="stylesheet" href="<?= base_url()?>public/css/style.css">
 

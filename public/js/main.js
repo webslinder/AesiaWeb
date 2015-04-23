@@ -39,9 +39,9 @@ jQuery(document).ready(function() {
     map.tap.disable()
   };
 
-  
-
-
+  //Copyright
+  var anio = new Date().getFullYear();
+  document.getElementById('anio').textContent = anio;
 
   //animaciones
   $('#head1').addClass('animated fadeInDownBig');
