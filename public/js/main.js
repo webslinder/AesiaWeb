@@ -1,17 +1,7 @@
 jQuery(document).ready(function() {
-  $(".sidebar").simpleSidebar({
-    settings: {
-      opener: "#open",
-      wrapper: ".wrapper",
-      animation: {
-        easing: "easeOutQuint"
-      }
-    },
-    sidebar: {
-      align: "right",
-      width: 600,
-      closingLinks: 'a',
-    }
+  //SideMenu   
+  $('.nav li a').on('click', function() {
+    $('.navbar-collapse').collapse('hide');
   });
 
   //Mapa
@@ -19,20 +9,20 @@ jQuery(document).ready(function() {
   var map = L.mapbox.map('map', 'agodinez.m07oo184')
     .setView([13.97, -89.574], 17);
 
-    map.featureLayer.on('click', function(e) {
-        map.panTo(e.layer.getLatLng());
-    });
+  map.featureLayer.on('click', function(e) {
+    map.panTo(e.layer.getLatLng());
+  });
 
   // L.marker is a low-level marker constructor in Leaflet.
   L.marker([13.97, -89.574], {
-    icon: L.mapbox.marker.icon({
-      'marker-size': 'large',
-      'marker-symbol': 'circle',
-      'marker-color': '#f86767'
+      icon: L.mapbox.marker.icon({
+        'marker-size': 'large',
+        'marker-symbol': 'circle',
+        'marker-color': '#f86767'
+      })
     })
-  })
-  .bindPopup('<p><strong>UES FMOcc</strong><br />Edificio de usos multiples, 3ra Planta.</p>')
-  .addTo(map);
+    .bindPopup('<p><strong>UES FMOcc</strong><br />Edificio de usos multiples, 3ra Planta.</p>')
+    .addTo(map);
 
   map.scrollWheelZoom.disable();
   if (map.tap) {

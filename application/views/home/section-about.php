@@ -1,7 +1,7 @@
 <div id="about" class="pad-section">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6 col-xs-12">
+			<div class="col-sm-6 col-xs-12" style="padding-top: 1.5rem;">
 				<img class="img-responsive" src="<?= base_url()?>public/imgs/logo.png" alt="" />
 			</div>
 			<div class="col-sm-6 col-xs-12 is-center">

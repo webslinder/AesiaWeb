@@ -1,7 +1,44 @@
-﻿
+﻿/*Fonts */
+@font-face {
+  font-family: 'Chewy';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Chewy'), url(http://fonts.gstatic.com/s/chewy/v7/rb3O4cUMVLYzfgbaJOdJHw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/chewy/v7/nB-Yp57-ChbdqJ4CkQVXAQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Boogaloo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Boogaloo'), local('Boogaloo-Regular'), url(http://fonts.gstatic.com/s/boogaloo/v6/selWIQWiQA98uHaoODndYvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2'), url(http://fonts.gstatic.com/s/boogaloo/v6/1x_XysQB9ZwoSzu9a0nb7PesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Nova Square';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nova Square'), local('NovaSquare'), url(http://fonts.gstatic.com/s/novasquare/v8/YsNHj2Yx5KzHzIjNe-czdI4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2'), url(http://fonts.gstatic.com/s/novasquare/v8/YsNHj2Yx5KzHzIjNe-czdIbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Squada One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Squada One'), local('SquadaOne-Regular'), url(http://fonts.gstatic.com/s/squadaone/v5/DIbfqh10Zkwc_Qd08Y0safk_vArhqVIZ0nv9q090hN8.woff2) format('woff2'), url(http://fonts.gstatic.com/s/squadaone/v5/DIbfqh10Zkwc_Qd08Y0saRsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Voces';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Voces'), local('Voces-Regular'), url(http://fonts.gstatic.com/s/voces/v4/JozN20EhXqWGzsF-OMFYBg.woff2) format('woff2'), url(http://fonts.gstatic.com/s/voces/v4/ePr7eRI28zZaOtQ8CcT7rA.woff) format('woff');
+}
+
+
+/* End Fonts*/
 html, body {
   height: 100%;
   width: 100%;
+  font-family: 'Voces', cursive;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Nova Square', cursive;
 }
 .wrapper {
   height: 100%
@@ -23,7 +60,7 @@ text-align: right;
   padding: 6rem 0;
 }
 .pad-section img {
-  width: 100%;
+  width: 100%;  
 }
 
 .panel-title {
@@ -41,6 +78,9 @@ text-align: right;
   padding: 0;
 }
 
+nav:not(.mm-menu){
+  display: none;
+}
 
 #home {
   background: url(../imgs/fon1.jpg) no-repeat center center fixed; 
@@ -52,15 +92,24 @@ text-align: right;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  z-index: -1;
 }
 
 #about {
+  box-shadow: 0px -3px 5px rgba(0,0,0,0.4);
+}
+
+#menu {
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.4);
 }
 
 #contact, #proyectos {
   background-color:#3f51b5;
   color: #ffffff;
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.4);
 }
+
+
 #proyectos .icon {
   border: 2px solid #FFFFFF;
   border-radius: 50%;
@@ -83,13 +132,20 @@ text-align: right;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  z-index: -1;
 }
 #information .panel {
   opacity: 0.85;
+  box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.4);
+}
+
+#galery {
+  box-shadow: 0px -3px 5px rgba(0,0,0,0.4);
 }
 
 #map {
   height: 420px;
+  z-index: -1;
 }
 
 .text-head {
@@ -130,8 +186,10 @@ footer {
 background: #111;
 color: #888;
 padding: 0.6em 2em;
+box-shadow: 0px -3px 5px rgba(0,0,0,0.4);
 }
 .footer-mark {
+  font-family: 'Chewy', cursive;
 background: #000;
 color: #888;
 height: 8em;
@@ -160,12 +218,13 @@ text-decoration: none
 .mark #ws:hover {
 color: #00aced;
 }
+.navbar .navbar-right > li > a {
+  font-family: 'Squada One', cursive;
+  font-size: 22px;
+}
 .navbar .navbar-right > li > a:hover {
 color: black;
-border-bottom: 3px solid;
-border-color: rgb(0, 0, 0);
-padding-bottom: 19px;
-background-color: rgba(0,0,6,0.1);
+padding-bottom: 22px;
 }
 .navbar-right {
 margin-right: 0px !important;
@@ -186,12 +245,12 @@ margin-top: 1.3rem
 margin: 1rem;
 width: 148px;
 height: 42px;
-background-image: url("../imgs/logo.png");
+background-image: url("../imgs/logoBW.png");
 background-repeat: no-repeat;
 background-position: center;
 }
 .navbar-header > a.navbar-brand:hover {
-background-image: url("../imgs/logoBW.png");
+background-image: url("../imgs/logo.png");
 background-repeat: no-repeat;
 background-position: center;
 }
@@ -200,73 +259,103 @@ background-position: center;
 * On tablets, we want to slightly adjust the size of the banner
 * text and add some vertical space between the various pricing tables
 */
-@media(max-width: 767px) {
-.navbar .navbar-nav > li > a:hover {
-background-color: rgba(255,255,255,0.1);
-}
-.show-on-down-screen {
-display: inline !important;
-}
-.hide-on-down-screen {
-display: none !important;
+@media(max-width: 980px) {
+  .thumb {
+    height: 21rem;
+  }
+
+  .navbar .navbar-right > li > a {
+    font-size: 18px;
+  }
 }
 
-.thumb {
-  height: 22rem;
-}
+@media(max-width: 767px) {
+  .navbar .navbar-nav > li > a:hover {
+  background-color: rgba(255,255,255,0.1);
+  }
+  .show-on-down-screen {
+  display: inline !important;
+  }
+  .hide-on-down-screen {
+  display: none !important;
+  }
+
+  .thumb {
+    height: 25rem;
+  }
+
+  .navbar-collapse {
+      max-height: 100% !important;
+  }
+  #navbar-collapse-main {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .navbar .navbar-right > li > a:hover {
+  padding-bottom: 19px;
+  }
+
 }
 /*
 * -- PHONE MEDIA QUERIES --
 * On phones, we want to reduce the height and font-size of the banner further
 */
+
+@media(max-width: 640px) {
+  .thumb {
+    height: 20rem;
+  }
+}
+
 @media (max-width: 480px) {
-.mark {
-text-align: center;
-font-size: 0.9em;
-margin-top: -0.2em;
-}
-#proyectos h4, #about h2, #information h2 {
-  font-size: 1.4em;
-}
-
-#proyectos p, #about p, #information .lead {
-  font-size: 0.9em;
-}
-
-.thumb {
-  height: 17rem;
-}
-
-.pad-section {
-  padding: 4rem 0
-}
-
-#proyectos .icon {
-  border: 2px solid #FFFFFF;
-  border-radius: 50%;
-  display: inline-block;
-  font-size: 4rem;
-  height: 75px;
-  line-height: 75px;
+  .mark {
   text-align: center;
-  vertical-align: middle;
-  width: 75px;
-}
+  font-size: 0.9em;
+  margin-top: -0.2em;
+  }
+  #proyectos h4, #about h2, #information h2 {
+    font-size: 1.4em;
+  }
+
+  #proyectos p, #about p, #information .lead {
+    font-size: 0.9em;
+  }
+
+  .thumb {
+    height: 15rem;
+  }
+
+  .pad-section {
+    padding: 5rem 0;
+  }
+
+  #proyectos .icon {
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 4rem;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    vertical-align: middle;
+    width: 75px;
+  }
 
 }
+
 @media (max-width: 320px) {
-.thumb {
-  height: 10rem;
-}
+  .thumb {
+    height: 12rem;
+  }
 
-.text-head {
-  font-size: 2em
-}
+  .text-head {
+    font-size: 2em;
+  }
 
-.pad-section {
-  padding: 3rem 0
-}
-
+  .pad-section {
+    padding: 3rem 0;
+  }
 
 
 }

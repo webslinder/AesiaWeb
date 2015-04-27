@@ -1,5 +1,5 @@
 <div id="information" class="pad-section">
-	<div class="container">
+	<div class="container" style="padding-top: 1.5rem">
 		<div class="row">
 			<div class="col-sm-6">
 				<div class="panel panel-default">

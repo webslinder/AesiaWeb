@@ -2,10 +2,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 text-center">
-				<h3>Contactanos</h3>
-				<h4>Universidad de El Salvador Faculta Multidiciplinaria de Occidente</h4>
+				<h3>Cont&aacute;ctanos</h3>
+				<h4>Universidad de El Salvador, Facultad Multidiciplinaria de Occidente</h4>
 				<br>
-				<div type="button" data-toggle="modal" href="#message" class="btn btn-primary">Escribenos</div>
+				<div type="button" data-toggle="modal" href="#message" class="btn btn-primary btn-lg">Escribenos</div>
 			</div>
 			
 			<div class="modal" id="message">
@@ -19,21 +19,21 @@
 							<form class="form-horizontal">
 								<fieldset>
 									<div class="form-group">
-										<label for="iEmail" class="col-lg-2 control-label">Email:</label>
-										<div class="col-lg-10">
-											<input id="iEmail" class="form-control floating-label" placeholder="example@correo.com" type="email">
+										<label for="iEmail" class="col-lg-2 col-sm-2 control-label">Email:</label>
+										<div class="col-lg-10 col-sm-10">
+											<input id="iEmail" class="form-control" placeholder="example@correo.com" type="email">
 										</div>
 									</div>
 									<div class="form-group">
-										<label for="iAsunto" class="col-lg-2 control-label">Asunto:</label>
-										<div class="col-lg-10">
-											<input id="iAsunto" class="form-control floating-label" placeholder="Hola" type="text">
+										<label for="iAsunto" class="col-lg-2 col-sm-2 control-label">Asunto:</label>
+										<div class="col-lg-10 col-sm-10">
+											<input id="iAsunto" class="form-control" placeholder="Hola" type="text">
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="iMensaje" class="col-sm-2 control-label">Mensaje:</label>
-										<div class="col-lg-10">
-											<textarea id="iMensaje" class="form-control floating-label" rows="3" placeholder="Hola AESIA! :)"></textarea>
+										<div class="col-lg-10 col-sm-10">
+											<textarea id="iMensaje" class="form-control" rows="3" placeholder="Hola AESIA! :)"></textarea>
 										</div>
 									</div>
 								</fieldset>
