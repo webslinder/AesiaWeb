@@ -36,11 +36,24 @@ jQuery(document).ready(function() {
   //animaciones
   $('#head1').addClass('animated fadeInDownBig');
   $('#subhead').addClass('animated fadeInUp');
-  $('#vi').addClass('animated slideInup');
-  $('#mi').addClass('animated flipInUp');
+  $('#vi').addClass('animated fadeInUp');
+  $('#mi').addClass('animated fadeInUp');
   $("#about").click(function() {
     $('#des').addClass('animated flip');
+  });          
+  $(".ion-android-settings").click(function() {
+    $('.ion-android-settings').addClass('animated flip');
   });
+  $(".ion-ribbon-b").click(function() {
+    $('.ion-ribbon-b').addClass('animated flip');
+  });
+  $(".ion-leaf").click(function() {
+    $('.ion-leaf').addClass('animated flip');
+  });
+  $(".ion-university").click(function() {
+    $('.ion-university').addClass('animated flip');
+  });
+
   //Navegacion
 
 

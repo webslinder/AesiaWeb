@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	</head>
 	<body>
-		<div class="wrapper">
+		
 			<?=$this->load->view('templates/menu')?>
 			
 			<?=$this->load->view('home/section-home')?>
@@ -25,7 +25,7 @@
 			<?=$this->load->view('home/section-map')?>
 			
 			<?=$this->load->view('templates/footer')?>
-		</div>
+		
 		<?=$this->load->view('templates/scripts')?>
 		
 	</body>

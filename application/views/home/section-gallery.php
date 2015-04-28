@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">			
 			<div class="col-lg-12 is-center">
-				<h1 class="text-head">Galería de Imágenes</h1>
+				<h1 class="text-head">Galer&iacute;a de Im&aacute;genes</h1>
 			</div>
 			<div id="blueimp-gallery" class="blueimp-gallery">
 				<div class="slides"></div>

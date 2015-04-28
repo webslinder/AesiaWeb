@@ -13,7 +13,7 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-							<legend class="is-center">Escribenos</legend>
+							<legend class="is-center">Escr&iacute;benos</legend>
 						</div>
 						<div class="modal-body">
 							<form class="form-horizontal">

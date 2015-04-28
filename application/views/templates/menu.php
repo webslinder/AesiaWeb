@@ -10,10 +10,10 @@
 		<div class="collapse navbar-collapse is-center" id="navbar-collapse-main">
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="#home">Inicio</a></li>
-				<li><a href="#about">Conócenos</a></li>
+				<li><a href="#about">Con&oacute;cenos</a></li>
 				<li><a href="#proyectos">Proyectos</a></li>
-				<li><a href="#information">Asociación</a></li>
-				<li><a href="#galery">Galería</a></li>
+				<li><a href="#information">Asociaci&oacute;n</a></li>
+				<li><a href="#galery">Galer&iacute;a</a></li>
 				<li><a href="#contact">Contacto</a></li>
 			</ul>
 			</div><!-- /.navbar-collapse -->
