@@ -1,4 +1,5 @@
 jQuery(document).ready(function() {
+  
   //SideMenu   
   $('.nav li a').on('click', function() {
     $('.navbar-collapse').collapse('hide');

@@ -5,7 +5,7 @@
 				<h3>Cont&aacute;ctanos</h3>
 				<h4>Universidad de El Salvador, Facultad Multidiciplinaria de Occidente</h4>
 				<br>
-				<div type="button" data-toggle="modal" href="#message" class="btn btn-primary btn-lg">Escribenos</div>
+				<button data-toggle="modal" href="#message" class="btn btn-success btn-lg">Escribenos</button>
 			</div>
 			
 			<div class="modal" id="message">
@@ -40,7 +40,7 @@
 							</form>
 						</div>
 						<div class="modal-footer is-center">
-							<a href="#" class="btn btn-primary">Enviar Mensaje</a>
+							<button href="#" class="btn btn-success">Enviar Mensaje</button>
 						</div>
 					</div>
 				</div>

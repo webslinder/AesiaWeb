@@ -1,4 +1,4 @@
-﻿/*Fonts */
+/*Fonts */
 @font-face {
   font-family: 'Chewy';
   font-style: normal;
@@ -72,35 +72,43 @@ text-align: right;
   padding: 0;
 }
 
+.modal-footer {
+  padding-bottom: 3rem !important;
+}
+
 nav:not(.mm-menu){
   display: none;
+}
+
+.btn:hover:not(.btn-link):not(.btn-flat):not(.btn-fab) {
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.3), 0px 6px 20px 0px rgba(0, 0, 0, 0.29);
 }
 
 #home {
   background: url(../imgs/fon1.jpg) no-repeat center center fixed; 
   display: table;
   height: 100%;
-  position: relative;
   width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  z-index: -1;
 }
 
 #about {
-  box-shadow: 0px -3px 5px rgba(0,0,0,0.4);
+  box-shadow: 0px -8px 17px 0px rgba(0, 0, 0, 0.4)
 }
 
 #menu {
-  box-shadow: 0px 3px 5px rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0px;
+  box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.4)
 }
 
 #contact, #proyectos {
   background-color:#3f51b5;
   color: #ffffff;
-  box-shadow: 0px 3px 5px rgba(0,0,0,0.4);
+  box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.4)
 }
 
 
@@ -120,21 +128,21 @@ nav:not(.mm-menu){
   background: url(../imgs/bild.jpg) no-repeat center center fixed; 
   display: table;
   height: 35%;
-  position: relative;
   width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;  
+  position: relative;
   z-index: -1;
 }
 #information .panel {
   opacity: 0.85;
-  box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.4);
+  box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.4), 0px 6px 20px 0px rgba(0, 0, 0, 0.39);
 }
 
 #galery {
-  box-shadow: 0px -3px 5px rgba(0,0,0,0.4);
+  box-shadow: 0px -8px 17px 0px rgba(0, 0, 0, 0.4)
 }
 
 #map {
@@ -159,6 +167,7 @@ height: 20rem;
 -moz-transition: all 1s ease;
 -ms-transition: all 1s ease;
 transition: all 1s ease;
+box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
 }
 .thumb a:hover {
 -webkit-transform: rotate(-3deg);
@@ -174,7 +183,7 @@ footer {
 background: #111;
 color: #888;
 padding: 0.6em 2em;
-box-shadow: 0px -3px 5px rgba(0,0,0,0.4);
+box-shadow: 0px -8px 17px 0px rgba(0, 0, 0, 0.4)
 }
 .footer-mark {  
 background: #000;
@@ -251,11 +260,12 @@ background-position: center;
 * On tablets, we want to slightly adjust the size of the banner
 * text and add some vertical space between the various pricing tables
 */
-@media(max-width: 980px) {
+@media(max-width: 1024) {
   .thumb {
     height: 21rem;
-  }
-
+  }  
+}
+@media(max-width: 980px) {
   .navbar .navbar-right > li > a {
     font-size: 18px;
   }
