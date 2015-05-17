@@ -54,7 +54,7 @@ text-align: right;
   padding: 6rem 0;
 }
 .pad-section img {
-  width: 100%;  
+  width: 100%;
 }
 
 .panel-title {
@@ -82,10 +82,11 @@ nav:not(.mm-menu){
 
 .btn:hover:not(.btn-link):not(.btn-flat):not(.btn-fab) {
     box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.3), 0px 6px 20px 0px rgba(0, 0, 0, 0.29);
+    color: #000;
 }
 
 #home {
-  background: url(../imgs/fon1.jpg) no-repeat center center fixed; 
+  background: url(../imgs/fon1.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   width: 100%;
@@ -125,14 +126,14 @@ nav:not(.mm-menu){
 }
 
 #information {
-  background: url(../imgs/bild.jpg) no-repeat center center fixed; 
+  background: url(../imgs/bild.jpg) no-repeat center center fixed;
   display: table;
   height: 35%;
   width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;  
+  background-size: cover;
   position: relative;
   z-index: -1;
 }
@@ -144,6 +145,7 @@ nav:not(.mm-menu){
 #galery {
   box-shadow: 0px -8px 17px 0px rgba(0, 0, 0, 0.4)
 }
+
 
 #map {
   height: 420px;
@@ -159,15 +161,11 @@ nav:not(.mm-menu){
 display: none !important;
 }
 
-.thumb {
-height: 20rem;
-}
 .thumb a{
 -webkit-transition: all 1s ease;
 -moz-transition: all 1s ease;
 -ms-transition: all 1s ease;
 transition: all 1s ease;
-box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
 }
 .thumb a:hover {
 -webkit-transform: rotate(-3deg);
@@ -185,14 +183,14 @@ color: #888;
 padding: 0.6em 2em;
 box-shadow: 0px -8px 17px 0px rgba(0, 0, 0, 0.4)
 }
-.footer-mark {  
+.footer-mark {
 background: #000;
 color: #888;
 height: 8em;
 padding: 2rem;
 }
 
-.footer-mark #wb{  
+.footer-mark #wb{
   font-family: 'Chewy', cursive;
 }
 
@@ -260,11 +258,7 @@ background-position: center;
 * On tablets, we want to slightly adjust the size of the banner
 * text and add some vertical space between the various pricing tables
 */
-@media(max-width: 1024) {
-  .thumb {
-    height: 21rem;
-  }  
-}
+
 @media(max-width: 980px) {
   .navbar .navbar-right > li > a {
     font-size: 18px;
@@ -282,11 +276,7 @@ background-position: center;
   display: none !important;
   }
 
-  .thumb {
-    height: 25rem;
-  }
-
-  .navbar-collapse {
+.navbar-collapse {
       max-height: 100% !important;
   }
   #navbar-collapse-main {
@@ -304,11 +294,6 @@ background-position: center;
 * On phones, we want to reduce the height and font-size of the banner further
 */
 
-@media(max-width: 640px) {
-  .thumb {
-    height: 21rem;
-  }
-}
 
 @media (max-width: 480px) {
   .mark {
@@ -324,11 +309,7 @@ background-position: center;
     font-size: 0.9em;
   }
 
-  .thumb {
-    height: 15rem;
-  }
-
-  .pad-section {
+.pad-section {
     padding: 5rem 0;
   }
 
@@ -347,9 +328,6 @@ background-position: center;
 }
 
 @media (max-width: 320px) {
-  .thumb {
-    height: 12rem;
-  }
 
   .text-head {
     font-size: 2em;
@@ -358,7 +336,7 @@ background-position: center;
   .pad-section {
     padding: 3rem 0;
   }
-  
+
   #about, #proyectos, #information, #galery, #contact {
     padding-top: 5rem;
   }
