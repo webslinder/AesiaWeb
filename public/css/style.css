@@ -86,7 +86,8 @@ nav:not(.mm-menu){
 }
 
 #home {
-  background: url(../imgs/fon1.jpg) no-repeat center center fixed;
+  background: url(../imgs/fon1.jpg) no-repeat center center;
+  background-attachment:fixed;
   display: table;
   height: 100%;
   width: 100%;
@@ -101,8 +102,9 @@ nav:not(.mm-menu){
 }
 
 #menu {
-  position: fixed;
-  top: 0px;
+  /*position: fixed;
+  top: 0px;*/
+  -webkit-backface-visibility: hidden;
   box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.4)
 }
 
@@ -126,7 +128,8 @@ nav:not(.mm-menu){
 }
 
 #information {
-  background: url(../imgs/bild.jpg) no-repeat center center fixed;
+  background: url(../imgs/bild.jpg) no-repeat center center;
+  background-attachment:fixed;
   display: table;
   height: 35%;
   width: 100%;
@@ -217,6 +220,8 @@ text-decoration: none
 .mark #ws:hover {
 color: #00aced;
 }
+/******/
+
 .navbar .navbar-right > li > a {
   font-family: 'Squada One', cursive;
   font-size: 22px;
@@ -341,4 +346,10 @@ background-position: center;
     padding-top: 5rem;
   }
 
+}
+
+/* webkit background bug */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* CSS Statements that only apply on webkit-based browsers (Chrome, Safari, etc.) */
+  #home, #information { background-attachment:local;}
 }
