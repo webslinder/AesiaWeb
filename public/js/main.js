@@ -73,4 +73,11 @@ jQuery(document).ready(function() {
     }
   });
 
+  // Scroll to top
+  $('#goTop').go_top({
+    'top':200,
+    'in':300,
+    'out':300,
+    'duration':500
+  });
 });
