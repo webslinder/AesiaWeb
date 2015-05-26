@@ -8,4 +8,5 @@
 <script src="<?= base_url()?>public/js/main.js"></script>
 <script src="<?= base_url()?>public/js/gallery.js"></script>
 <script src="<?= base_url()?>public/js/mapbox.js"></script>
+<script src="<?= base_url()?>public/js/goTop.js"></script>
 <script>$.material.init();</script>
