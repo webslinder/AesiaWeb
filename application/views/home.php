@@ -29,7 +29,7 @@
     <?=$this->load->view('templates/scripts')?>
 
     <button class="btn btn-fab btn-fab-mini btn-raised btn-material-deep-orange shadow-z-3" id="goTop">
-      <i class="mdi-navigation-expand-less" id="iconTop"></i>
+      <i class="ion-chevron-up" id="iconTop"></i>
     </button>
   </body>
 </html>
