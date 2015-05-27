@@ -1,0 +1,355 @@
+/*Fonts */
+@font-face {
+  font-family: 'Chewy';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Chewy'), url(http://fonts.gstatic.com/s/chewy/v7/rb3O4cUMVLYzfgbaJOdJHw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/chewy/v7/nB-Yp57-ChbdqJ4CkQVXAQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Nova Square';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nova Square'), local('NovaSquare'), url(http://fonts.gstatic.com/s/novasquare/v8/YsNHj2Yx5KzHzIjNe-czdI4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2'), url(http://fonts.gstatic.com/s/novasquare/v8/YsNHj2Yx5KzHzIjNe-czdIbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Squada One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Squada One'), local('SquadaOne-Regular'), url(http://fonts.gstatic.com/s/squadaone/v5/DIbfqh10Zkwc_Qd08Y0safk_vArhqVIZ0nv9q090hN8.woff2) format('woff2'), url(http://fonts.gstatic.com/s/squadaone/v5/DIbfqh10Zkwc_Qd08Y0saRsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Voces';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Voces'), local('Voces-Regular'), url(http://fonts.gstatic.com/s/voces/v4/JozN20EhXqWGzsF-OMFYBg.woff2) format('woff2'), url(http://fonts.gstatic.com/s/voces/v4/ePr7eRI28zZaOtQ8CcT7rA.woff) format('woff');
+}
+
+
+/* End Fonts*/
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Voces', cursive;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Nova Square', cursive;
+}
+.lead {
+ font-size: 16px;
+}
+.is-center {
+text-align: center;
+}
+.is-left {
+text-align: left;
+}
+.is-justify {
+text-align: justify;
+}
+.is-right {
+text-align: right;
+}
+
+.pad-section {
+  padding: 6rem 0;
+}
+.pad-section img {
+  width: 100%;
+}
+
+.panel-title {
+  font-size: 2.5rem;
+}
+.text-vcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.text-vcenter h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-footer {
+  padding-bottom: 3rem !important;
+}
+
+nav:not(.mm-menu){
+  display: none;
+}
+
+.btn:hover:not(.btn-link):not(.btn-flat):not(.btn-fab) {
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.3), 0px 6px 20px 0px rgba(0, 0, 0, 0.29);
+    color: #000;
+}
+
+#home {
+  background: url(../imgs/fon1.jpg) no-repeat center center;
+  background-attachment:fixed;
+  display: table;
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#about {
+  box-shadow: 0px -8px 17px 0px rgba(0, 0, 0, 0.4)
+}
+
+#menu {
+  /*position: fixed;
+  top: 0px;*/
+  -webkit-backface-visibility: hidden;
+  box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.4)
+}
+
+#contact, #proyectos {
+  background-color:#3f51b5;
+  color: #ffffff;
+  box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.4)
+}
+
+
+#proyectos .icon {
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 6rem;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  width: 100px;
+}
+
+#information {
+  background: url(../imgs/bild.jpg) no-repeat center center;
+  background-attachment:fixed;
+  display: table;
+  height: 35%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+#information .panel {
+  opacity: 0.85;
+  box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.4), 0px 6px 20px 0px rgba(0, 0, 0, 0.39);
+}
+
+#galery {
+  box-shadow: 0px -8px 17px 0px rgba(0, 0, 0, 0.4)
+}
+
+
+#map {
+  height: 420px;
+  z-index: -1;
+}
+
+.text-head {
+    color: black;
+    font-weight: 500;
+}
+
+.show-on-down-screen {
+display: none !important;
+}
+
+.thumb a{
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;
+}
+.thumb a:hover {
+-webkit-transform: rotate(-3deg);
+-moz-transform: rotate(-3deg);
+-ms-transform: rotate(-3deg);
+transform: rotate(-3deg);
+}
+
+footer {
+  padding: 20px 0;
+}
+.footer {
+background: #111;
+color: #888;
+padding: 0.6em 2em;
+box-shadow: 0px -8px 17px 0px rgba(0, 0, 0, 0.4)
+}
+.footer-mark {
+background: #000;
+color: #888;
+height: 8em;
+padding: 2rem;
+}
+
+.footer-mark #wb{
+  font-family: 'Chewy', cursive;
+}
+
+.mark, mark {
+padding: 0.15em !important;
+background-color: transparent !important;
+}
+.socials a {
+color: #fff;
+padding: 0.5rem;
+}
+.socials #fb:hover {
+color: #3b5998;
+}
+.socials #tw:hover {
+color: #00aced;
+}
+.socials #yt:hover, .mark .ion-heart {
+color: #bb0000;
+}
+.mark #ws {
+text-decoration: none
+}
+.mark #ws:hover {
+color: #00aced;
+}
+/******/
+
+.navbar .navbar-right > li > a {
+  font-family: 'Squada One', cursive;
+  font-size: 22px;
+}
+.navbar .navbar-right > li > a:hover {
+color: black;
+padding-bottom: 22px;
+}
+.navbar-right {
+margin-right: 0px !important;
+}
+.navbar, .navbar-nav {
+min-height: 60px;
+}
+.navbar .navbar-nav > li > a {
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.navbar-brand img {
+}
+.navbar-toggle {
+margin-top: 1.3rem
+}
+.navbar-header > a.navbar-brand {
+margin: 1rem;
+width: 148px;
+height: 42px;
+background-image: url("../imgs/logoBW.png");
+background-repeat: no-repeat;
+background-position: center;
+}
+.navbar-header > a.navbar-brand:hover {
+background-image: url("../imgs/logo.png");
+background-repeat: no-repeat;
+background-position: center;
+}
+/*
+* -- TABLET MEDIA QUERIES --
+* On tablets, we want to slightly adjust the size of the banner
+* text and add some vertical space between the various pricing tables
+*/
+
+@media(max-width: 980px) {
+  .navbar .navbar-right > li > a {
+    font-size: 18px;
+  }
+}
+
+@media(max-width: 767px) {
+  .navbar .navbar-nav > li > a:hover {
+  background-color: rgba(255,255,255,0.1);
+  }
+  .show-on-down-screen {
+  display: inline !important;
+  }
+  .hide-on-down-screen {
+  display: none !important;
+  }
+
+.navbar-collapse {
+      max-height: 100% !important;
+  }
+  #navbar-collapse-main {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .navbar .navbar-right > li > a:hover {
+  padding-bottom: 19px;
+  }
+
+}
+/*
+* -- PHONE MEDIA QUERIES --
+* On phones, we want to reduce the height and font-size of the banner further
+*/
+
+
+@media (max-width: 480px) {
+  .mark {
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: -0.2em;
+  }
+  #proyectos h4, #about h2, #information h2 {
+    font-size: 1.4em;
+  }
+
+  #proyectos p, #about p, #information .lead {
+    font-size: 0.9em;
+  }
+
+.pad-section {
+    padding: 5rem 0;
+  }
+
+  #proyectos .icon {
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 4rem;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    vertical-align: middle;
+    width: 75px;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .text-head {
+    font-size: 2em;
+  }
+
+  .pad-section {
+    padding: 3rem 0;
+  }
+
+  #about, #proyectos, #information, #galery, #contact {
+    padding-top: 5rem;
+  }
+
+}
+
+/* webkit background bug */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* CSS Statements that only apply on webkit-based browsers (Chrome, Safari, etc.) */
+  #home, #information { background-attachment:local;}
+}
